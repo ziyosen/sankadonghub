@@ -15,8 +15,8 @@ interface animeConfig {
 
 const animeConfig: animeConfig = {
   sankadonghub: {
-    siteName: "sankadonghub",
-    description: "Nonton donghua gratis ga pake karcis hanya di Sankadonghub",
+    siteName: "donghub",
+    description: "Nonton donghua gratis ga pake karcis hanya di donghub",
     logo: "/images/logo.png",
     favicon: "/favicon.png",
     image: "/images/sankadonghub.jpg",
