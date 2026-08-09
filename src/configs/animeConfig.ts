@@ -23,7 +23,7 @@ const animeConfig: animeConfig = {
   },
 
   sankadonghubApi: {
-    apiUrl: "https://www.sankavollerei.com",
+    apiUrl: "https://www.sankavollerei.web.id",
     baseUrlPath: "/anime/donghua",
   },
 };
