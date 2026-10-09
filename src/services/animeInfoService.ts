@@ -89,10 +89,14 @@ export default async function animeInfoService(routeParams: {
           }
 
           return {
-              title: displayTitle, 
-              episodeId: e.slug, 
+              title: displayTitle,
+              episodeId: e.slug,
           };
-      }).reverse() 
+      }).sort((a, b) => {
+          const na = parseFloat((a.title.match(/Ep\s+([\d.]+)/i) || [])[1] ?? '0');
+          const nb = parseFloat((b.title.match(/Ep\s+([\d.]+)/i) || [])[1] ?? '0');
+          return nb - na; // urut menurun (terbaru dulu), stabil walau API acak
+      })
   };
 
   return { ...result, data: mappedData };
